@@ -1,0 +1,183 @@
+/* Main CSS */
+body {
+/*    background-image: url('../images/333-Back.jpg');*/
+    background:#333;
+    color: #fff;
+}
+/* ================================== */
+/* =========== Shared CSS =========== */
+/* ================================== */
+p {
+    text-indent: 25px; 
+    font-size: 16px;
+    color: #fff;
+}
+
+.DarkBack h1 {
+    color: #eee;   
+}
+.LightBack {
+    background-color: teal;
+}
+.LightBack h1 {
+    color: #333;
+}
+.vAlign {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+/* ================================== */
+/* ========= Navigation CSS ========= */
+/* ================================== */
+
+.navigation {
+    text-align:center;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    margin:0 auto;
+    color: #fff;
+    font-size: 24px;
+    height: 42px;
+    width: 100%;
+    position: fixed;
+    background: #333;
+    z-index: 99999999;
+}
+.navigation a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navigation a:hover {
+    text-decoration:none;
+    color:teal;
+}
+.navigation a.active:hover {
+    color:coral;   
+}
+.non-active {
+    color: #fff;
+}
+.active {
+    color: coral;   
+}
+
+/* ================================== */
+/* ========= Title Page CSS ========= */
+/* ================================== */
+
+#TitlePage {
+    color: #333;
+    margin-top: -20px;
+    height: 100vh;    
+}
+#TitlePage h1 {
+    font-size:76px;     
+}
+#TitlePage h3 {
+    color: coral;   
+    font-size: 18px;
+}
+
+/* ================================== */
+/* ======== LandingLine CSS ========= */
+/* ================================== */
+
+#LandingLine {
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 85vh;
+    border-top: solid coral 1px;
+    border-bottom: solid coral 1px;
+}
+#LandingLine h1 {
+    color: teal; 
+    font-size: 48px;
+}
+/* ================================== */
+/* ======== Main Content CSS ======== */
+/* ================================== */
+.full-height {
+    min-height: 100vh;   
+    padding: 40px;
+}
+#AboutController h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 15%;
+}
+#AboutController p {
+    max-width: 720px;
+    margin:0 auto;
+    text-align: center;
+    text-indent: 0px;
+}
+#WorkExperience h1,
+#ProjectExperience h1{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: solid coral 1px;
+}
+#WorkExperience div h1,
+#ProjectExperience div h1{
+    margin-bottom: 10px;   
+    border: none;
+}
+#WorkExperience .LightBack {
+    padding:20px;
+}
+#WorkExperience div h1 {
+    font-size: 24px;   
+}
+#ProjectExperience div h1 {
+    text-align: left;  
+    font-size: 30px;
+}
+#ProjectExperience .project {
+    width: 100%; 
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#ProjectExperience .project p {
+    text-indent: 0px;
+    padding-left: 25px;
+}
+#ProjectExperience .project a {
+    padding:0px;
+}
+#ProjectExperience .project img {
+   width: 100%;
+}
+#ContactController {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#ContactController p {
+    text-indent:0px;  
+    padding-top: 20px;
+}
+#contact {
+    padding-bottom: 40px;   
+}
+
+.btn {
+    border-style:solid;
+    border-radius: 0px;    
+}
+.btn:hover {	
+    background-color: transparent;
+    color: teal;
+    border-color: teal;
+}
+.btn:hover h1 {
+    color: teal;   
+}
+.clear {
+    clear:both;
+}

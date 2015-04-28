@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<title> Peter Jones | Portfolio</title>
+	<link href="css/main.css" rel="stylesheet"/>
+	<script src="js/angularjs.js"></script>
+	<script src="js/script.js"></script>	
+</head>
+<body ng-app="portfolio">
+        <div class="navigation DarkBack">
+            <a class="non-active active glyphicon glyphicon-home" onclick="ScrollTo('#TitlePage');"></a>
+            <a class="non-active glyphicon glyphicon-fire" onclick="ScrollTo('#LandingLine', 60);"></a>
+            <a class="non-active glyphicon glyphicon-user" onclick="ScrollTo('#AboutController');"></a>
+            <a class="non-active glyphicon glyphicon-folder-open" onclick="ScrollTo('#WorkExperience');"></a>
+            <a class="non-active glyphicon glyphicon-globe" onclick="ScrollTo('#ProjectExperience');"></a>
+            <a class="non-active glyphicon glyphicon-comment" onclick="ScrollTo('#ContactController');"></a>
+        </div>
+		<div id="TitlePage" class="LightBack text-center">
+            <div class="vAlign">
+                <h1 >Peter Jones</h1>
+                <h3>Web Developer</h3>
+            </div>
+        </div>
+		<div id="LandingLine" class="container DarkBack">
+            <div class="row vAlign">
+				<div class="col-lg-2">
+					<h1>Adaptable</h1>
+				</div>
+                <div class="col-lg-3">
+                    <h1 class="glyphicon glyphicon-fire"></h1>
+                </div>
+				<div class="col-lg-2">
+					<h1>Persistent</h1>
+				</div>
+                <div class="col-lg-3">
+                    <h1 class="glyphicon glyphicon-fire"></h1>
+                </div>
+				<div class="col-lg-2">
+					<h1>Reliable</h1>
+				</div>    
+            </div>
+		</div>
+		<!-- Main Content -->
+		<div id="main-content">
+			<!-- Loaded by AngularJS -->
+            
+            <div id="AboutController" class="full-height LightBack" ng-include src="'partials/about.html'"></div>
+            
+            <div id="WorkExperience" class="full-height">
+                <h1>Work Experience</h1>
+                <div class="col-lg-4" ng-include src="'partials/projects/personal.html'"></div>
+
+                <div class="col-lg-4" ng-include src="'partials/projects/cure.html'"></div>
+
+                <div class="col-lg-4" ng-include src="'partials/projects/gateway.html'"></div> 
+            </div>
+            
+            <div id="ProjectExperience" class="full-height LightBack">
+                <h1>Personal Projects</h1>
+                <div class="project" ng-include src="'partials/projects/ballyCC.html'"></div>
+                <div class="project" ng-include src="'partials/projects/puregallery.html'"></div>
+                
+                <div class="clear"></div>
+            </div>
+            
+            <div id="ContactController" class="container">
+                <div id="contact" class="col-sm-6" ng-include src="'partials/contact.html'"></div>
+                <div id="resume" class="col-sm-6" ng-include src="'partials/resume.html'"></div>
+            </div>
+<!--
+            <div id="AboutLine" class="Tiles">
+                <div id="AboutController" class="LightBack col-md-4" ng-include src="'partials/about.html'"></div>
+                <div id="ContactController" class="DarkBack col-md-4" ng-include src="'partials/contact.html'"></div>
+                <div id="PersonalProject" class="LightBack col-md-4" ng-include src="'partials/projects/personal.html'"></div>                
+            </div>
+            <div id="WorkOne" class="LargeTile">
+                <div id="GatewayProject" class="DarkBack" ng-include src="'partials/projects/gateway.html'"></div>
+            </div>
+            <div id="WorkTwo" class="Tiles">
+                <div id="BallyCCProject" class="LightBack col-md-4" ng-include src="'partials/projects/ballyCC.html'"></div>
+                <div id="ResumeController" class="DarkBack col-md-4" ng-include src="'partials/resume.html'"></div>
+                <div id="PuregalleryProject" class="LightBack col-md-4" ng-include src="'partials/projects/puregallery.html'"></div>
+            </div>
+            <div id="WorkThree" class="LargeTile">
+                <div id="CureProject" class="DarkBack" ng-include src="'partials/projects/cure.html'"></div>
+            </div>
+-->
+
+        </div>
+</body>
+</html>
